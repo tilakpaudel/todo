@@ -25,13 +25,6 @@
             android:name="com.delaroystudios.todolist.AddTaskActivity"
             android:label="@string/add_task_activity_name" />
 
-        <!-- Register the TaskContentProvider -->
-        <!-- Set name, authorities, and exported attributes -->
-        <!-- exported = false limits access to this ContentProvider to only this app -->
-        <provider
-            android:name="com.delaroystudios.todolist.data.TaskContentProvider"
-            android:authorities="com.example.android.todolist"
-            android:exported="false"/>
 
     </application>
 

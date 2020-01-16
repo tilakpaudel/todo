@@ -117,18 +117,33 @@
 
         </RadioGroup>
 
+
+
     </FrameLayout>
+
+    <!-- Add TextView to display the date -->
+
+    <!-- Add CalenderView to display the Calender -->
+
 
     <!-- Add button -->
     <Button
         android:id="@+id/addButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/add_button"
         style="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@android:color/primary_text_dark"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
         android:background="@color/colorPrimary"
-        android:onClick="onClickAddTask"/>
+        android:onClick="onClickAddTask"
+        android:text="@string/add_button"
+        android:textColor="@android:color/primary_text_dark" />
+
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="0dp"></CalendarView>
+
 
 </LinearLayout>
